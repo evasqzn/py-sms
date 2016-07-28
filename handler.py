@@ -42,4 +42,4 @@ def response_handler(body):
     elif emotion == "random":
         return "random messge", choice(random_links)
     else:
-        return "Choose a Mood: happy, sad, tired, love, nervous, energetic, heartbroken, jealous, inspirational, pumpup, femaleempowerment, party, random", 'blah'
+        return "Choose a Mood: happy, sad, tired, love, nervous, energetic, heartbroken, jealous, inspirational, pumpup, femaleempowerment, party, random", 'http://vignette4.wikia.nocookie.net/pokemon/images/5/5f/025Pikachu_OS_anime_11.png/revision/latest?cb=20150717063951'

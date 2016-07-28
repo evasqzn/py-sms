@@ -1,15 +1,45 @@
+from random import choice
 def response_handler(body):
-    message = ""
-    if body == 'start':
-        message = "You are in a boring class.  Do you 'take a nap' or 'take notes'?"
-    elif body == 'take a nap':
-        message = "You fall asleep forever...and ever...and ever.  Do you want to 'start' over?"
-    elif body == 'take notes':
-        message = "You furiously take notes as the teacher drones on.  Your friend taps you on the shoulder.  Do you 'turn around' or keep looking at your 'notes'"
-    elif body == 'turn around':
-        message = "You turn around, only to find that you have just stared into the eyes of a basilisk!  Oh well...do you want to 'start' over?"
-    elif body == 'notes':
-        message = "Unfortunately, this game is incomplete...please come back later for more!  Do you want to 'start' over?"
+
+    emotion = body
+    happy_links = []
+    sad_links = []
+    tired_links = []
+    love_links = []
+    nervous_links = []
+    energetic_links = []
+    heartbroken_links = []
+    jealous_links = []
+    inspirational_links = []
+    pumpup_links = []
+    femaleempowerment_links = []
+    party_links = []
+    random_links = []
+    if emotion == "happy":
+        return "happy message", choice(happy_links)
+    elif emotion == "sad":
+        return "sad message", choice(sad_links)
+    elif emotion == "tired":
+        return "tired message", choice(tired_links)
+    elif emotion == "love":
+        return "love message", choice(love_links)
+    elif emotion == "nervous":
+        return "nervous message", choice(nervous_links)
+    elif emotion == "energetic":
+        return "energetic message", choice(energetic_links)
+    elif emotion == "heartbroken":
+        return "heartbroken message", choice(heartbroken_links)
+    elif emotion == "jealous":
+        return "jealous message", choice(jealous_links)
+    elif emotion == "inspirational":
+        return "inspirational message", choice(inspirational_links)
+    elif emotion == "pumpup":
+        return "pumpup message", choice(pumpup_links)
+    elif emotion == "femaleempowerment":
+        return "femaleempowerment message", choice(femaleempowerment_links)
+    elif emotion == "party":
+        return "party message", choice(party_links)
+    elif emotion == "random":
+        return "random messge", choice(random_links)
     else:
-        message = "Invalid command.  Text 'start' to restart the game.  Or text 'pic please' for a random picture"
-    return message
+        return "Choose a Mood: happy, sad, tired, love, nervous, energetic, heartbroken, jealous, inspirational, pumpup, femaleempowerment, party, random", 'blah'

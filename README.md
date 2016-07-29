@@ -11,3 +11,8 @@ pip install -r requirements.txt
 ```
 python send_sms.py
 ```
+
+
+Project Name: Music Mood
+Instructions: In your terminal type 'cd Documents' then hit enter. Navigate into the 'py-sms' folder by typing 'cd py-sms'. Run the file jlev_musicmood.py in your terminal by typing 'python jlev_musicmood.py'. From there the file should run and 
+Erin and I got help from Mr. Jiang and Trinity.

@@ -44,5 +44,4 @@ user = raw_input("Enter a text to send your TWILIO number to start.  Or enter q 
 while user != "q":
  	response = response_handler(user)
  	send(fromnumber, tonumber, response)
- 	send_media(fromnumber, tonumber)
  	user = raw_input("Enter a text to send your TWILIO number.  Or enter q to quit: \n> ")

@@ -1,6 +1,6 @@
 from random import choice
 def response_handler(body):
-
+    message = "not this unicorn!"
     emotion = body
     happy_links = ["https://www.youtube.com/watch?v=hhE7QMXRE1g", "https://www.youtube.com/watch?v=nYh-n7EOtMA", "https://www.youtube.com/watch?v=xFrGuyw1V8s", "https://www.youtube.com/watch?v=D5Y11hwjMNs"]
     sad_links = ["https://www.youtube.com/watch?v=7NJqUN9TClM", "https://www.youtube.com/watch?v=nSDgHBxUbVQ", "https://www.youtube.com/watch?v=nCkpzqqog4k", "https://www.youtube.com/watch?v=-2U0Ivkn2Ds", "https://www.youtube.com/watch?v=ZSM3w1v-A_Y", "https://www.youtube.com/watch?v=hk9K032K7UM", "https://www.youtube.com/watch?v=eNznPGirzfg", "https://www.youtube.com/watch?v=GTyN-DB_v5M"]
@@ -17,29 +17,29 @@ def response_handler(body):
     if emotion == "happy":
         message = "I hope your day is as happy as you are!: %s" % choice(happy_links)
     elif emotion == "sad":
-        mesage = "I know your day will improve! Just keep looking up!: %s" % choice(sad_links)
+        message = "I know your day will improve! Just keep looking up!: %s" % choice(sad_links)
     elif emotion == "tired":
-        mesage = "Maybe if you went to bed earlier...: %s" % choice(tired_links)
+        message = "Maybe if you went to bed earlier...: %s" % choice(tired_links)
     elif emotion == "love":
-        mesage = "Go for it...you have nothing to lose.: %s" % choice(love_links)
+        message = "Go for it...you have nothing to lose.: %s" % choice(love_links)
     elif emotion == "nervous":
-        mesage = "Don't let your fears control you!: %s" % choice(nervous_links)
+        message = "Don't let your fears control you!: %s" % choice(nervous_links)
     elif emotion == "energetic":
-        mesage = "Chill out! Use that energy for a good cause!: %s" % choice(energetic_links)
+        message = "Chill out! Use that energy for a good cause!: %s" % choice(energetic_links)
     elif emotion == "heartbroken":
-        mesage = "It's not the end of the world. There are more fish in the sea.: %s" % choice(heartbroken_links)
+        message = "It's not the end of the world. There are more fish in the sea.: %s" % choice(heartbroken_links)
     elif emotion == "jealous":
-        mesage = "Green isn't a pretty color on you.: %s" % choice(jealous_links)
+        message = "Green isn't a pretty color on you.: %s" % choice(jealous_links)
     elif emotion == "inspirational":
-        mesage = "Don't stop believing in yourself!: %s" % choice(inspirational_links)
+        message = "Don't stop believing in yourself!: %s" % choice(inspirational_links)
     elif emotion == "pumpup":
-        mesage = "Let's get turnt!: %s" % choice(pumpup_links)
+        message = "Let's get turnt!: %s" % choice(pumpup_links)
     elif emotion == "femaleempowerment":
-        mesage = "Don't stop fighting for your equality!: %s" % choice(femaleempowerment_links)
+        message = "Don't stop fighting for your equality!: %s" % choice(femaleempowerment_links)
     elif emotion == "party":
-        mesage = "Live it up!: %s" % choice(party_links)
+        message = "Live it up!: %s" % choice(party_links)
     elif emotion == "random":
-        mesage = "RANDOM!: %s" % choice(random_links)
+        message = "RANDOM!: %s" % choice(random_links)
     else:
         message = "Choose a Mood: happy, sad, tired, love, nervous, energetic, heartbroken, jealous, inspirational, pumpup, femaleempowerment, party, random "  
     return message
